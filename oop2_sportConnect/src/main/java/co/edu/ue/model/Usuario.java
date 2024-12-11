@@ -4,7 +4,7 @@ import java.io.Serializable;
 import jakarta.persistence.*;
 
 /**
- * The persistent class for the usuarios database table.
+ * The persistent class for the usuario database table.
  */
 @Entity
 @Table(name = "usuarios")
