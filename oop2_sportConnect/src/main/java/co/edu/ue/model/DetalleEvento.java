@@ -15,7 +15,7 @@ public class DetalleEvento implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_detalle")
-    private Long idDetalle;
+    private int idDetalle;
 
     @ManyToOne
     @JoinColumn(name = "id_evento")
@@ -46,11 +46,11 @@ public class DetalleEvento implements Serializable {
     }
 
     // Getters y Setters
-    public Long getIdDetalle() {
+    public int getIdDetalle() {
         return idDetalle;
     }
 
-    public void setIdDetalle(Long idDetalle) {
+    public void setIdDetalle(int idDetalle) {
         this.idDetalle = idDetalle;
     }
 

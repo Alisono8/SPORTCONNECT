@@ -4,7 +4,7 @@ import java.io.Serializable;
 import jakarta.persistence.*;
 
 /**
- * The persistent class for the deportista database table.
+ * The persistent class for the Deportista database table.
  * 
  */
 @Entity
@@ -16,7 +16,7 @@ public class Deportista implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_deportista")
-    private Long idDeportista;
+    private int idDeportista;
 
     @Column(name = "documento")
     private String documento;
@@ -41,11 +41,11 @@ public class Deportista implements Serializable {
     public Deportista() {
     }
 
-    public Long getIdDeportista() {
+    public int getIdDeportista() {
         return this.idDeportista;
     }
 
-    public void setIdDeportista(Long idDeportista) {
+    public void setIdDeportista(int idDeportista) {
         this.idDeportista = idDeportista;
     }
 

@@ -29,8 +29,14 @@ public class CategoriaDao implements ICategoria {
 	
 	@Override
 	public boolean deleteCategoria(int id) {
-		// TODO Auto-generated method stub
+		
 		return false;
+	}
+
+	@Override
+	public Categoria getIDCategoria(int id) {
+		
+		return jpa.findById(id).orElse(null);
 	}
 	
 	
