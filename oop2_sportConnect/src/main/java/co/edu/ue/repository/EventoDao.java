@@ -24,7 +24,7 @@ public class EventoDao implements IEvento {
 
 	@Override
 	public boolean deleteEvento(int id) {
-		Eventos evento = jpa.findById((long) id).orElse(null);
+		Eventos evento = jpa.findById(id).orElse(null);
 		    if (evento != null) {
 		    	evento.setEstatus("eliminado"); 
 		        jpa.save(evento);   
@@ -36,7 +36,7 @@ public class EventoDao implements IEvento {
 	@Override
 	public Eventos getIDEventos(int id) {
 		// TODO Auto-generated method stub
-		return jpa.findById((long) id).orElse(null);
+		return jpa.findById(id).orElse(null);
 	}
 
 

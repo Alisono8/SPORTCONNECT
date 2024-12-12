@@ -3,9 +3,10 @@ package co.edu.ue.repository;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import co.edu.ue.model.Categoria;
-
+@Repository
 public class CategoriaDao implements ICategoria {
 
 	@Autowired
@@ -43,7 +44,4 @@ public class CategoriaDao implements ICategoria {
 		
 		return jpa.findById(id).orElse(null);
 	}
-	
-	
-	
 }
