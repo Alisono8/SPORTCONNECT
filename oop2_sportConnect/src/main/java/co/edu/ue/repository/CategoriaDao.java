@@ -29,8 +29,13 @@ public class CategoriaDao implements ICategoria {
 	
 	@Override
 	public boolean deleteCategoria(int id) {
-		
-		return false;
+		 Categoria categoria = jpa.findById(id).orElse(null);
+		    if (categoria != null) {
+		        categoria.setEstatus("eliminado"); 
+		        jpa.save(categoria);   
+		        return true;
+		    }
+		    return false; 
 	}
 
 	@Override

@@ -5,7 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import co.edu.ue.model.Eventos;  // La clase de entidad es Eventos
+
+import co.edu.ue.model.Eventos; 
 
 @Repository
 public class EventoDao implements IEvento {
@@ -13,29 +14,39 @@ public class EventoDao implements IEvento {
     @Autowired
     IEventoJpa jpa;
     
-    @Override
-    public List<Eventos> addEvento(Eventos evento) {  // Cambiado Evento a Eventos
-        jpa.save(evento); 
-        
-        return getAllEvento();  
-    }
+ 
 
     @Override
     public Eventos updateEvento(Eventos evento) { 
         return jpa.save(evento);  
     }
 
-    @Override
-    public List<Eventos> getAllEvento() {  
-        return jpa.findAll();  
-    }
 
-    @Override
-    public boolean deleteEvento(Long id) {  
-        if (jpa.existsById(id)) {  
-            jpa.deleteById(id);  
-            return true;  
-        }
-        return false;  
-    }
+	@Override
+	public boolean deleteEvento(int id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Eventos getIDEventos(int id) {
+		// TODO Auto-generated method stub
+		return jpa.findById(id).orElse(null);
+	}
+
+
+	@Override
+	public List<Eventos> addEvento(Eventos evento) {
+		jpa.save(evento);
+		return getAllEventos() ;
+	}
+
+
+	@Override
+	public List<Eventos> getAllEventos() {
+		// TODO Auto-generated method stub
+		return jpa.findAll();
+	}
+
+ 
 }

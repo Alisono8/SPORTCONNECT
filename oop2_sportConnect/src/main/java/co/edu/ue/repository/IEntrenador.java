@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+
 import co.edu.ue.model.Entrenador;
 
 @Repository
@@ -12,4 +13,5 @@ public interface IEntrenador {
 	Entrenador updateEntrenador(Entrenador entrenador);
 	 List<Entrenador> getAllEntrenador();
 	 boolean deleteEntrenador(int id);
+	 Entrenador getIDEntrenador(int id);
 }

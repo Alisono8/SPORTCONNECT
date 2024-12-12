@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import co.edu.ue.model.Categoria;
-import co.edu.ue.model.Mascota;
 
 
 @Repository

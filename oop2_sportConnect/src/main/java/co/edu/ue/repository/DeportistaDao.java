@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+
 import co.edu.ue.model.Deportista;
 
 public class DeportistaDao implements IDeportista {
@@ -32,8 +33,20 @@ public class DeportistaDao implements IDeportista {
 
 	@Override
 	public boolean deleteDeportista(int id) {
-		// TODO Auto-generated method stub
-		return false;
+		
+		Deportista deportista = jpa.findById(id).orElse(null);
+		    if (deportista != null) {
+		    	deportista.setEstatus("eliminado"); 
+		        jpa.save(deportista);   
+		        return true;
+		    }
+		    return false; 
+	}
+
+	@Override
+	public Deportista getIDDeportistas(int id) {
+		
+		return  jpa.findById(id).orElse(null);
 	}
 
 }

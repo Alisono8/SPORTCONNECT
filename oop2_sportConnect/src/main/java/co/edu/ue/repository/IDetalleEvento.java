@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
+
 import co.edu.ue.model.DetalleEvento;
 
 
@@ -12,5 +13,6 @@ public interface IDetalleEvento {
 	List<DetalleEvento> addDetalleEvento(DetalleEvento detalleEvento);
 	DetalleEvento updateDetalleEvento(DetalleEvento detalleEvento);
 	 List<DetalleEvento> getAllDetalleEvento();
-	 boolean deleteDetalleEvento(int id);
+	
+	 DetalleEvento getIDDetalleEvento(int id);
 }

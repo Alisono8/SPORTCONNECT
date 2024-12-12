@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+
 import co.edu.ue.model.DetalleEvento;
 
 public class DetalleEventoDao implements IDetalleEvento{
@@ -29,10 +30,11 @@ public class DetalleEventoDao implements IDetalleEvento{
 		return jpa.findAll();
 	}
 
+
 	@Override
-	public boolean deleteDetalleEvento(int id) {
+	public DetalleEvento getIDDetalleEvento(int id) {
 		// TODO Auto-generated method stub
-		return false;
+		return jpa.findById(id).orElse(null);
 	} 
 
 } 

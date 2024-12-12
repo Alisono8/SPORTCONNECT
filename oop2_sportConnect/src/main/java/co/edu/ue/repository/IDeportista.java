@@ -13,4 +13,5 @@ public interface IDeportista {
  Deportista updateDeportista(Deportista deportista);
  List<Deportista> getAllDeportistas();
  boolean deleteDeportista(int id);
+ Deportista getIDDeportistas(int id);
 }

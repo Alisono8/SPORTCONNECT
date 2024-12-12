@@ -4,12 +4,14 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import co.edu.ue.model.Eventos;  // Cambiado a la clase Eventos
+
+import co.edu.ue.model.Eventos;  
 
 @Repository
 public interface IEvento {
-    List<Eventos> addEvento(Eventos evento);  // Cambiado Evento a Eventos
-    Eventos updateEvento(Eventos evento);  // Cambiado Evento a Eventos
-    List<Eventos> getAllEvento();  // Cambiado Evento a Eventos
-    boolean deleteEvento(Long id);  // Cambiado int a Long
+    List<Eventos> addEvento(Eventos evento);  
+    Eventos updateEvento(Eventos evento);  
+    boolean deleteEvento(int id); 
+    Eventos getIDEventos(int id);
+    List<Eventos> getAllEventos(); 
 }

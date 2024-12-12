@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import co.edu.ue.model.Deportista;
+
 import co.edu.ue.model.Usuario;
 
 @Repository
@@ -13,4 +13,5 @@ public interface IUsuario {
 	Usuario updateUsuario(Usuario usuario);
 	 List<Usuario> getAllUsuario();
 	 boolean deleteUsuario(int id);
+	 Usuario getIDUsuario(int id);
 }
