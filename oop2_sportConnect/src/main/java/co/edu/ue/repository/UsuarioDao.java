@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import co.edu.ue.model.Categoria;
+
 import co.edu.ue.model.Usuario;
 
 public class UsuarioDao implements IUsuario{
@@ -37,6 +37,12 @@ public class UsuarioDao implements IUsuario{
 			 return true;
 		}
 		return false;
+	}
+
+	@Override
+	public Usuario getIDUsuario(int id) {
+		// TODO Auto-generated method stub
+		return jpa.findById(id).orElse(null);
 	}
 	
 }

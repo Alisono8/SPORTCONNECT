@@ -35,6 +35,12 @@ public class EntrenadorDao implements IEntrenador {
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+	@Override
+	public Entrenador getIDEntrenador(int id) {
+		// TODO Auto-generated method stub
+		return jpa.findById(id).orElse(null);
+	}
 	
 
 }
