@@ -13,31 +13,29 @@ public class DetallesService implements IDetalleEventoService {
 	@Autowired
 	IDetalleEvento dao;
 
-
-
 	@Override
-	public List<co.edu.ue.model.DetalleEvento> DetalleEvento(co.edu.ue.model.DetalleEvento detalleEvento) {
-		return null;
+	public List<DetalleEvento> DetalleEvento(DetalleEvento entrenador) {
+		return dao.agregarDetalleEventos(entrenador);
 	}
 
 	@Override
-	public co.edu.ue.model.DetalleEvento actualizarDetalleEvento(co.edu.ue.model.DetalleEvento detalleEvento) {
-		return null;
+	public DetalleEvento actualizarDetalleEvento(DetalleEvento detalleEvento) {
+		return dao.actualizarDetalleEventos(detalleEvento);
 	}
 
 	@Override
-	public List<co.edu.ue.model.DetalleEvento> buscarEvento() {
-		return null;
+	public List<DetalleEvento> buscarEvento() {
+		return dao.buscarDetalleEventos();
 	}
 
 	@Override
 	public boolean bajaDetalleEvento(int id) {
-		return false;
+		return dao.bajaDetalleEventos(id);
 	}
 
 	@Override
-	public co.edu.ue.model.DetalleEvento buscarIdDDetalleEvento(int id) {
-		return null;
+	public DetalleEvento buscarIdDDetalleEvento(int id) {
+		return dao.buscarIdDDetalleEventos(id);
 	}
 	
 	
