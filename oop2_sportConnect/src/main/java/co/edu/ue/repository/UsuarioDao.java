@@ -3,10 +3,10 @@ import java.util.List;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Repository;
 
 import co.edu.ue.model.Usuario;
-
+@Repository
 public class UsuarioDao implements IUsuario{
 	@Autowired
 	IUsuarioJpa jpa;
