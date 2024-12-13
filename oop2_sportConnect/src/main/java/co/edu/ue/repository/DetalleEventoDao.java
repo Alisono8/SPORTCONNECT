@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import co.edu.ue.model.DetalleEvento;
 @Repository
-public class DetalleEventoDao implements IDetalleEvento{
+public class DetalleEventoDao implements IDetalleEventos{
 	
 	@Autowired
 	IDetalleEventoJpa jpa;

@@ -9,7 +9,7 @@ import co.edu.ue.model.DetalleEvento;
 
 
 @Repository
-public interface IDetalleEvento {
+public interface IDetalleEventos {
 	List<DetalleEvento> addDetalleEvento(DetalleEvento detalleEvento);
 	DetalleEvento updateDetalleEvento(DetalleEvento detalleEvento);
 	 List<DetalleEvento> getAllDetalleEvento();
