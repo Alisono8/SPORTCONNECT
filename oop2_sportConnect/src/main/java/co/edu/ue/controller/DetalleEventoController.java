@@ -26,26 +26,26 @@ public class DetalleEventoController {
 
 	@GetMapping(value="obtenerDetalleEvento")//endPoint
 	public List<DetalleEvento> getAllDetalleEvento() {
-		return service.buscarDetalleEvento();
+		return service.buscarDetalleEventos();
 	}
 	
 	@GetMapping(value="obtenerIdDetalleEvento")//endPoint
 	public DetalleEvento getDetalleEventoId(@PathVariable("id") int id) {
-		return service.buscarIdDDetalleEvento(id);
+		return service.buscarIdDDetalleEventos(id);
 	}
 	@PostMapping(value="crearDetalleEvento")//endPoint
 	public List<DetalleEvento> postDetalleEvento(@Validated @RequestBody DetalleEvento detalleEvento) {
-		return service.agregarDetalleEvento(detalleEvento);
+		return service.agregarDetalleEventos(detalleEvento);
 	}
 	
 	@PutMapping(value="actualizarDetalleEvento")//endPoint
 	public DetalleEvento putDetalleEvento(@Validated @RequestBody DetalleEvento detalleEvento) {
 		
-		return service.actualizarDetalleEvento(detalleEvento);
+		return service.actualizarDetalleEventos(detalleEvento);
 				
 		}
 	@PutMapping(value = "deleteDetalleEvento/{id}")
 	public boolean deleteDetalleEvento(@PathVariable("id") int id) {
-		return service.bajaDetalleEvento(id);
+		return service.bajaDetalleEventos(id);
 	}
 }
