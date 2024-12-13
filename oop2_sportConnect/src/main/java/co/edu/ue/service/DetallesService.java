@@ -18,8 +18,8 @@ public class DetallesService implements IDetalleEvento {
 	}
 
 	@Override
-	public DetalleEvento actualizarEntrenador(DetalleEvento entrenador) {
-		return dao.actualizarEntrenador(entrenador);
+	public DetalleEvento actualizarDetalleEvento(DetalleEvento detalleEvento) {
+		return dao.actualizarDetalleEvento(detalleEvento);
 	}
 
 	@Override

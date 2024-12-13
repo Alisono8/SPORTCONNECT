@@ -9,7 +9,7 @@ public interface IDetalleEvento {
 	
 	List<DetalleEvento> agregarDetalleEvento(DetalleEvento entrenador);
 	
-	DetalleEvento actualizarEntrenador(DetalleEvento entrenador);
+	DetalleEvento actualizarDetalleEvento(DetalleEvento entrenador);
 	
 	List<DetalleEvento> buscarDetalleEvento();
 	
