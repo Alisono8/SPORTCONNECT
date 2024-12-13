@@ -4,18 +4,22 @@ import java.util.List;
 
 import co.edu.ue.model.DetalleEvento;
 
+
+
+
+
 public interface IDetalleEvento {
 
 	
-	List<DetalleEvento> agregarDetalleEvento(DetalleEvento entrenador);
+	List<DetalleEvento> agregarDetalleEventos(DetalleEvento entrenador);
 	
-	DetalleEvento actualizarDetalleEvento(DetalleEvento entrenador);
+	DetalleEvento actualizarDetalleEventos(DetalleEvento entrenador);
 	
-	List<DetalleEvento> buscarDetalleEvento();
+	List<DetalleEvento> buscarDetalleEventos();
 	
-	boolean bajaDetalleEvento(int id);
+	boolean bajaDetalleEventos(int id);
 	
-	DetalleEvento buscarIdDDetalleEvento(int id);
+	DetalleEvento buscarIdDDetalleEventos(int id);
 	
 
 }

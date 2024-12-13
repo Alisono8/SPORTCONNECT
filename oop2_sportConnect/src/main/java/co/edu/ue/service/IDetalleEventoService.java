@@ -16,4 +16,6 @@ public interface IDetalleEventoService {
 	boolean bajaDetalleEvento(int id);
 	
 	DetalleEvento buscarIdDDetalleEvento(int id);
+	
+	
 }

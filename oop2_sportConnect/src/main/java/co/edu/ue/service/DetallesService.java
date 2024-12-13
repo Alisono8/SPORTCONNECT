@@ -14,28 +14,28 @@ public class DetallesService implements IDetalleEvento {
 	IDetalleEvento dao;
 
 	@Override
-	public List<DetalleEvento> agregarDetalleEvento(DetalleEvento entrenador) {
-		return dao.agregarDetalleEvento(entrenador);
+	public List<DetalleEvento> agregarDetalleEventos(DetalleEvento entrenador) {
+		return dao.agregarDetalleEventos(entrenador);
 	}
 
 	@Override
-	public DetalleEvento actualizarDetalleEvento(DetalleEvento detalleEvento) {
-		return dao.actualizarDetalleEvento(detalleEvento);
+	public DetalleEvento actualizarDetalleEventos(DetalleEvento detalleEvento) {
+		return dao.actualizarDetalleEventos(detalleEvento);
 	}
 
 	@Override
-	public List<DetalleEvento> buscarDetalleEvento() {
-		return dao.buscarDetalleEvento();
+	public List<DetalleEvento> buscarDetalleEventos() {
+		return dao.buscarDetalleEventos();
 	}
 
 	@Override
-	public boolean bajaDetalleEvento(int id) {
-		return dao.bajaDetalleEvento(id);
+	public boolean bajaDetalleEventos(int id) {
+		return dao.bajaDetalleEventos(id);
 	}
 
 	@Override
-	public DetalleEvento buscarIdDDetalleEvento(int id) {
-		return dao.buscarIdDDetalleEvento(id);
+	public DetalleEvento buscarIdDDetalleEventos(int id) {
+		return dao.buscarIdDDetalleEventos(id);
 	}
 	
 	
