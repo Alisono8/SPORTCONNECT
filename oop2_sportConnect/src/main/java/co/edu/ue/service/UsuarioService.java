@@ -22,18 +22,24 @@ public class UsuarioService implements IUsuarioService{
 		return dao.updateUsuario(usuario);
 	}
 
-	@Override
-	public List<Usuario> buscarUsuario() {
-		return dao.getAllUsuario();
-	}
+
 
 	@Override
 	public boolean bajaUsuario(int id) {
 		return dao.deleteUsuario(id);
 	}
 
+
+
 	@Override
-	public Usuario buscarIdDUsuario(int id) {
+	public List<Usuario> buscarUsuarios() {
+		// TODO Auto-generated method stub
+		return dao.getAllUsuario();
+	}
+
+	@Override
+	public Usuario buscarIdUsuario(int id) {
+		// TODO Auto-generated method stub
 		return dao.getIDUsuario(id);
 	} 
 	

@@ -27,12 +27,12 @@ public class UsuarioController  {
 
 	@GetMapping(value="obtenerUsuarios")//endPoint
 	public List<Usuario> getAllUsuario() {
-		return service.buscarUsuario();
+		return service.buscarUsuarios();
 	}
 	
 	@GetMapping(value="obtenerIdUsuario")//endPoint
 	public Usuario getUserId(@PathVariable("id") int id) {
-		return service.buscarIdDUsuario(id);
+		return service.buscarIdUsuario(id);
 	}
 	@PostMapping(value="creaUsuario")//endPoint
 	public List<Usuario> postUsuario(@Validated @RequestBody Usuario usuario) {
