@@ -2,8 +2,10 @@ package co.edu.ue.service;
 
 import java.util.List;
 
-import co.edu.ue.model.Eventos;
+import org.springframework.stereotype.Service;
 
+import co.edu.ue.model.Eventos;
+@Service
 public class EventoService implements IEventoService {
 
 	@Override

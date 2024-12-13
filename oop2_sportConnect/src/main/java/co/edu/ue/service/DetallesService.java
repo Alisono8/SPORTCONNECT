@@ -3,10 +3,11 @@ package co.edu.ue.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import co.edu.ue.model.DetalleEvento;
 
-
+@Service
 public class DetallesService implements IDetalleEvento {
 
 	@Autowired
