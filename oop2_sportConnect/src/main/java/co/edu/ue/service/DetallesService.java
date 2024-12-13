@@ -8,34 +8,36 @@ import org.springframework.stereotype.Service;
 import co.edu.ue.model.DetalleEvento;
 
 @Service
-public class DetallesService implements IDetalleEvento {
+public class DetallesService implements IDetalleEventoService {
 
 	@Autowired
 	IDetalleEvento dao;
 
+
+
 	@Override
-	public List<DetalleEvento> agregarDetalleEventos(DetalleEvento entrenador) {
-		return dao.agregarDetalleEventos(entrenador);
+	public List<co.edu.ue.model.DetalleEvento> DetalleEvento(co.edu.ue.model.DetalleEvento detalleEvento) {
+		return null;
 	}
 
 	@Override
-	public DetalleEvento actualizarDetalleEventos(DetalleEvento detalleEvento) {
-		return dao.actualizarDetalleEventos(detalleEvento);
+	public co.edu.ue.model.DetalleEvento actualizarDetalleEvento(co.edu.ue.model.DetalleEvento detalleEvento) {
+		return null;
 	}
 
 	@Override
-	public List<DetalleEvento> buscarDetalleEventos() {
-		return dao.buscarDetalleEventos();
+	public List<co.edu.ue.model.DetalleEvento> buscarEvento() {
+		return null;
 	}
 
 	@Override
-	public boolean bajaDetalleEventos(int id) {
-		return dao.bajaDetalleEventos(id);
+	public boolean bajaDetalleEvento(int id) {
+		return false;
 	}
 
 	@Override
-	public DetalleEvento buscarIdDDetalleEventos(int id) {
-		return dao.buscarIdDDetalleEventos(id);
+	public co.edu.ue.model.DetalleEvento buscarIdDDetalleEvento(int id) {
+		return null;
 	}
 	
 	

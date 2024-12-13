@@ -43,7 +43,6 @@ public class SecurityConfig {
 		http.csrf(cus->cus.disable())
 		.authorizeHttpRequests(aut->
 			aut.requestMatchers(HttpMethod.POST,"/datos").hasAnyRole("ADMINS")
-			//.requestMatchers(HttpMethod.DELETE,"/datos/**").hasAnyRole("ADMINS","OTHER")
 			.requestMatchers(HttpMethod.GET,"/api/categoria").authenticated()
 			.requestMatchers(HttpMethod.GET,"/api").authenticated()			
 			
