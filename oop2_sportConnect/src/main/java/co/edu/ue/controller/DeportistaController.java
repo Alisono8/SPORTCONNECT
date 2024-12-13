@@ -33,6 +33,7 @@ public class DeportistaController {
 	public Deportista getUserId(@PathVariable("id") int id) {
 		return service.buscarIdDDeportista(id);
 	}
+	
 	@PostMapping(value="obtenerUsuarios")//endPoint
 	public List<Deportista> postDeportista(@Validated @RequestBody Deportista deportista) {
 		return service.agregarDeportista(deportista);
