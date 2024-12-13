@@ -35,7 +35,6 @@ public class EventoDao implements IEvento {
 
 	@Override
 	public Eventos getIDEventos(int id) {
-		// TODO Auto-generated method stub
 		return jpa.findById(id).orElse(null);
 	}
 
