@@ -11,7 +11,6 @@ import co.edu.ue.repository.ICategoria;
 @Service
 public class CategoriaService implements ICategoriaService {
 	
-	// Inyección de dependencias - Repository
 	@Autowired
 	ICategoria dao;
 
